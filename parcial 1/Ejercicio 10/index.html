@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js - Watcher de Variable</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.2.47"></script>
+</head>
+<body>
+    <div id="app">
+        <value-watcher :value="valor"></value-watcher>
+        <button @click="cambiarValor" class="change-button">
+            Cambiar Valor
+        </button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

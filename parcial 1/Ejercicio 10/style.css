@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    flex-direction: column;
+}
+
+.message-box {
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    margin-bottom: 20px;
+    transition: opacity 0.3s;
+    opacity: 1;
+}
+
+.message-box.hide {
+    opacity: 0;
+}
+
+.change-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.change-button:hover {
+    background-color: #0056b3;
+}
+
+.change-button:active {
+    background-color: #003f7f;
+}

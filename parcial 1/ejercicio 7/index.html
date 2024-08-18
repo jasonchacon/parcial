@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 - Cambiar Tema Oscuro/Claro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3.2.47"></script>
+</head>
+<body :class="tema">
+    <div id="app">
+        <div class="container">
+            <h1>{{ tema === 'light' ? 'Tema Claro' : 'Tema Oscuro' }}</h1>
+            <button @click="toggleTema" class="theme-button">
+                Cambiar a {{ tema === 'light' ? 'Oscuro' : 'Claro' }}
+            </button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
